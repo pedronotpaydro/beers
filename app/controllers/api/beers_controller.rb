@@ -13,6 +13,8 @@ class Api::BeersController < ApplicationController
       name: params[:name],
       brewery_id: params[:brewery_id],
       style: params[:style],
+      ounces: params[:ounces],
+      abv: params[:abv],
       # description: params[:description],
     )
 
@@ -29,6 +31,7 @@ class Api::BeersController < ApplicationController
     @beer.brewery_id = params[:brewery_id] || @beer.brewery_id
     @beer.style = params[:style] || @beer.style
     @beer.ounces = params[:ounces] || @beer.ounces
+    @beer.abv = params[:abv] || @beer.abv
     # @beer.description = params[:description] || @beer.description
     @beer.save
 
