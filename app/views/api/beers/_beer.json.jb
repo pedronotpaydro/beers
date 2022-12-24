@@ -1,0 +1,8 @@
+{
+
+  name: beer.name,
+  brewery: beer.brewery_id,
+  style: beer.style,
+  ounces: beer.ounces,
+
+}
